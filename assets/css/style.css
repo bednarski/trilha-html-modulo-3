@@ -1,0 +1,139 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    margin-top: 60px;;
+}
+ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+hr.bar { /* Ppara não afetar outras <hr> */
+    background-color: #f9f9fb;
+    padding: 15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+.container { /* Aqui mantenho o container para o layout em grid */
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+}
+
+aside.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+
+aside.sidebar {
+    border-right: solid 1px #cdcdcd;
+}
+
+figure {
+    text-align: center;
+}
+
+header {
+    padding: 10px 0;
+}
+
+nav ul { /* Lista de navegação dentro de <nav> */
+    padding-left: 0;
+}
+
+main.main-content {
+    /* Estilo para o conteúdo principal */
+    padding: 1rem 0;
+}
+
+article {
+    /* Artigos dentro do conteúdo principal */
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #eee;
+}
+
+/* Estilo específico para o botão que remete ao topo */
+.float {
+    position: fixed;
+    cursor: pointer;
+    display: block;
+    width: 60px;
+    height: 60px;
+    bottom: 70px;
+    right: 15px;
+    background-color: rgb(9, 10, 9);
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    transition-duration: 0.5s;
+    animation: pulse 3s infinite;
+    z-index: 9000;
+}
+
+.my-float {
+    margin-top: 15px;
+}
+
+/* Estilo para Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Para arredondar as bordas corretamente */
+}
+
+table caption{
+    padding: 25px;;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+tbody tr td{
+    font-size: 20px;
+}
